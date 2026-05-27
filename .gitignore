@@ -1,0 +1,23 @@
+# macOS
+.DS_Store
+
+# Scala / build tools
+.bsp/
+.scala-build/
+target/
+project/target/
+project/project/
+
+# Datasets ERA5 locales
+datos/crudos/*.csv
+!datos/crudos/.gitkeep
+!datos/crudos/README.md
+
+# Resultados temporales opcionales
+scala/resultados_prueba/
+
+# Python / entornos locales
+venv/
+__pycache__/
+*.pyc
+.python-version
