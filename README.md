@@ -41,7 +41,7 @@ Total procesado esperado: 81,370,296 registros.
 - `scala/src/main/scala/climabigdata/Resultados.scala`: generacion de CSV finales.
 - `scala/src/test/scala/climabigdata/Pruebas.scala`: casos de prueba.
 
-La version principal y unica del proyecto para la exposicion esta en `scala/`.
+La version principal del proyecto esta en `scala/`.
 
 ## Pipeline funcional
 
@@ -105,11 +105,25 @@ sin depender de shapefiles ni GIS.
 
 ## Ejecucion
 
-Si no tienes Scala CLI:
+Instalar Scala CLI en macOS:
 
 ```bash
 brew install scala-cli
 ```
+
+Instalar Scala CLI en Windows con PowerShell:
+
+```powershell
+winget install VirtusLab.ScalaCLI
+```
+
+Verificar instalacion:
+
+```bash
+scala-cli --version
+```
+
+Ejecutar el proyecto:
 
 ```bash
 cd scala
@@ -145,7 +159,7 @@ datos/crudos/
 En GitHub esta carpeta queda vacia salvo por `README.md` y `.gitkeep`, para
 mantener la estructura sin subir archivos pesados.
 
-## Enfoque funcional para exposicion
+## Enfoque funcional
 
 - `map`: transforma lineas CSV en registros climaticos enriquecidos.
 - `filter`: selecciona heladas, invierno y verano.

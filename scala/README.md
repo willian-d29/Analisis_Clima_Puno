@@ -12,12 +12,24 @@ Programacion:
 - datos inmutables con `case class`
 - procesamiento por chunks para simular Big Data
 
-## Ejecutar con scala-cli
+## Ejecutar con Scala CLI
 
 Instalacion en macOS:
 
 ```bash
 brew install scala-cli
+```
+
+Instalacion en Windows con PowerShell:
+
+```powershell
+winget install VirtusLab.ScalaCLI
+```
+
+Verificar instalacion:
+
+```bash
+scala-cli --version
 ```
 
 Desde la carpeta `scala/`:
